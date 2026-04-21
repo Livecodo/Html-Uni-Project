@@ -1,0 +1,466 @@
+/* ReqC1, ReqC2 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ReqC2, ReqC4 */
+:root {
+    --blue: #1f4b99;
+    --blue-dk: #163a75;
+    --green: #2a7f62;
+    --green-lt: #ecfdf5;
+    --text: #1a1a2e;
+    --muted: #555e6b;
+    --surface: #ffffff;
+    --border: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ReqC3 */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 0.875rem;
+    color: var(--muted);
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0.5rem 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    background: #eef2ff;
+}
+
+nav ul a:hover {
+    background: var(--blue);
+    color: white;
+}
+
+/* ReqC8 */
+#feature {
+    background-color: var(--green-lt);
+    border-left: 4px solid var(--green);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* ReqC7 */
+.card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid var(--green);
+    background: var(--green-lt);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--green);
+}
+
+/* ReqC18 */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ReqC18 */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* ReqC18 */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--green);
+}
+
+/* ReqC18 */
+input:required,
+textarea:required {
+    border-left: 3px solid var(--green);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* ReqC19 */
+.btn,
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    border: none;
+    background: var(--blue);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover,
+.btn:hover {
+    background: var(--blue-dk);
+}
+
+button[type="reset"] {
+    background: var(--muted);
+}
+
+/* ReqC17 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f0f4fa;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul,
+ol {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+/* ReqJ3 */
+.valid {
+    border: 2px solid var(--green) !important;
+    background-color: #f0fdf4 !important;
+}
+
+.invalid {
+    border: 2px solid #e74c3c !important;
+    background-color: #fff5f5 !important;
+}
+
+/* ReqJ5 */
+#error-box {
+    display: none;
+    background-color: #fff0f0;
+    color: #c0392b;
+    border: 1px solid #e74c3c;
+    border-left: 4px solid #e74c3c;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ReqJ2 */
+#preview {
+    background-color: #eef6fb;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ReqC20 */
+@media (max-width: 640px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .btn,
+    button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+#lang-selector-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    /* push to right side of nav */
+    padding: 4px 8px;
+    background: var(--blue);
+    border-radius: 6px;
+}
+
+#lang-label {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1;
+}
+
+#lang-selector {
+    /* ReqI7 */
+    appearance: none;
+    -webkit-appearance: none;
+    background: #ffffff;
+    color: var(--blue);
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    min-width: 90px;
+}
+
+#lang-selector:focus {
+    outline: 2px solid var(--green);
+}
+
+#lang-selector:hover {
+    background: var(--green-lt);
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.stats-section {
+    background: #f0f4fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.stat-value {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--blue);
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: block;
+}
+
+/* Sample records table spacing */
+.sample-records {
+    margin-top: 1.5rem;
+}
+
+/* --- English (en-GB) styles --- */
+
+/* ReqI11 – Rule 1 (en): footer gets a blue-toned left border */
+footer:lang(en) {
+    border-top: 4px solid var(--blue);
+    background: #eef2ff;
+    color: var(--blue-dk);
+}
+
+/* ReqI11 – Rule 2 (en): nav links get a rounded pill shape */
+nav:lang(en) ul a {
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+/* ReqI11 – Rule 3 (en): stat values appear in blue */
+.stat-value:lang(en) {
+    color: var(--blue);
+}
+
+/* ReqI11 – Rule 4 (en): h2 headings have a bottom underline accent */
+main:lang(en) h2 {
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 0.25rem;
+}
+
+/* --- Spanish (es-ES) styles --- */
+
+/* ReqI11 – Rule 1 (es): footer gets a warm terracotta/green tone */
+footer:lang(es) {
+    border-top: 4px solid #c0392b;
+    background: #fff5f0;
+    color: #7a1a0a;
+}
+
+/* ReqI11 – Rule 2 (es): nav links get a square style to feel more classic */
+nav:lang(es) ul a {
+    border-radius: 3px;
+    font-style: italic;
+    border-color: #c0392b;
+    background: #fff5f0;
+    color: #c0392b;
+}
+
+/* ReqI11 – Rule 3 (es): nav links hover uses Spanish red */
+nav:lang(es) ul a:hover {
+    background: #c0392b;
+    color: #ffffff;
+    border-color: #c0392b;
+}
+
+/* ReqI11 – Rule 4 (es): stat values appear in red for es locale */
+.stat-value:lang(es) {
+    color: #c0392b;
+}
+
+/* ReqI11 – Rule 5 (es): h2 headings get a red underline accent */
+main:lang(es) h2 {
+    border-bottom: 2px solid #c0392b;
+    padding-bottom: 0.25rem;
+}

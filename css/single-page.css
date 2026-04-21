@@ -1,0 +1,69 @@
+/* ReqS5 */
+main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* ReqS6 */
+#feature::first-line {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ReqS9 */
+#feature {
+    border-left: 0.4rem solid #2a7f62;
+    background: #ecfdf5;
+}
+
+/* ReqS10 */
+nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* ReqS11 */
+nav ul a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid #1f4b99;
+    border-radius: 0.35rem;
+    text-decoration: none;
+    background: #eef2ff;
+}
+
+/* ReqS12 */
+h2+table {
+    margin-top: 0.5rem;
+}
+
+/* ReqS13 */
+nav li {
+    margin: 0;
+}
+
+/* ReqS14 */
+nav ul a:hover,
+nav ul a:focus-visible {
+    background: #1f4b99;
+    color: #ffffff;
+    outline: 0.15rem solid #2a7f62;
+    outline-offset: 0.1rem;
+}
+
+/* ReqS15 */
+.expense-notes {
+    list-style-type: decimal-leading-zero;
+    margin-left: 1.5rem;
+}
+
+/* ReqS16 */
+table caption {
+    caption-side: top;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 0.6rem;
+}

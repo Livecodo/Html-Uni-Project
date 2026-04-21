@@ -1,0 +1,54 @@
+/* Contact page – page-specific styles */
+
+form {
+    max-width: 520px;
+    margin: 1rem auto;
+}
+
+fieldset {
+    border: 2px solid #2a7f62;
+    background-color: #ecfdf5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2a7f62;
+    padding: 0 0.4rem;
+}
+
+.required-star {
+    color: #c0392b;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.inline-label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 0.8rem;
+}
+
+#preview {
+    background-color: #eef6fb;
+    border: 1px solid #1f4b99;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+#error-box {
+    display: none;
+    background-color: #fff0f0;
+    color: #c0392b;
+    border: 1px solid #e74c3c;
+    border-left: 4px solid #e74c3c;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
